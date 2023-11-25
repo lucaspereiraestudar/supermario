@@ -1,0 +1,98 @@
+
+/* style.css */
+
+/* Reset de margin e padding para o body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    background-image: url("https://images7.alphacoders.com/131/1318286.jpeg");
+}
+
+/* Estilos para a caixa do vídeo do Mario */
+.caixa-video-mario {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+p {
+  color: white;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.mascara-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para a caixa principal */
+.caixa-principal {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-mario {
+    width: 200px;
+    height: auto;
+}
+
+/* Estilos para o botão "Fale Conosco" */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Estilos para o formulário "Fale Conosco" */
+.fale-conosco {
+    position: fixed;
+    top: 50%;
+    left: -320px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
+}
+
+input,
+textarea,
+button[type="submit"] {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.mascara-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    z-index: 0;
+}
